@@ -22,13 +22,17 @@
     color: black;
     line-height: 32px;
   }
+  a {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+  }
 }
 
 /* WEB*/
 @media only screen and (min-width: 600px) {
   h1 {
     font-family: "Philosopher", sans-serif;
-    font-size: 5.1rem;
+    font-size: 5rem;
     color: #d92929;
   }
 
@@ -43,6 +47,9 @@
     font-size: 1rem;
     color: black;
     line-height: 32px;
+  }
+  a {
+    font-family: "Poppins", sans-serif;
   }
 }
 
