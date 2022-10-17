@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -10,6 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
       rel="stylesheet"
     />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            cursor: {
+              mincursor: "url(cursor.svg) 25 25, pointer",
+            },
+          },
+        },
+      };
+    </script>
     <title>Nina Vergmann</title>
   </head>
   <body>
@@ -27,12 +38,14 @@
       </nav>
     </header>
     <section class="flex justify-center">
-      <div class="w-1/2 pt-20">
-        <h1 class="p-7">Digital designer</h1>
-        <h1 class="p-7">Web developper</h1>
-        <p class="p-7">med passion for fotografi, video redigering & SoMe</p>
-        <div class="flex justify-center pt-10">
-          <button class="border-sm h-10 w-28 border-2 border-black">
+      <div class="w-1/2 p-20 pt-20">
+        <h1>Digital designer</h1>
+        <h1>Web developper</h1>
+        <p>med passion for fotografi, video redigering & SoMe</p>
+        <div class="flex justify-center pt-20">
+          <button
+            class="border-sm hover:cursor-mincursor h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
+          >
             Erfaring
           </button>
         </div>
@@ -44,6 +57,13 @@
           alt="forside billede"
         />
       </div>
+    </section>
+    <section id="velkommen">
+      <h2>Velkommen</h2>
+      <p>
+        Jeg hedder Nina Vergmann og jeg elsker at designe webløsninger og kode
+        dem.
+      </p>
     </section>
     <script type="module" src="./main.js"></script>
   </body>

@@ -4,6 +4,10 @@
 
 h1 {
   font-family: "Philosopher", sans-serif;
-  font-size: 5rem;
+  font-size: 5.1rem;
   color: #d92929;
+}
+
+#velkommen {
+  background-image: url("src/illustrationer/baggrundsbobbel.svg");
 }
