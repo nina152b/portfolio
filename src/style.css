@@ -2,12 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-  font-family: "Philosopher", sans-serif;
-  font-size: 5.1rem;
-  color: #d92929;
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2rem;
+    color: #d92929;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 5.1rem;
+    color: #d92929;
+  }
 }
 
 #velkommen {
-  background-image: url("src/illustrationer/baggrundsbobbel.svg");
+  background-image: url(/illustrationer/baggrundsbobbel.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
+  .autominmax {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
