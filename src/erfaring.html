@@ -58,7 +58,7 @@
         <h3>Udvælg et område:</h3>
       </div>
     </section>
-    <section class="pt-14">
+    <section class="flex justify-center pt-14">
       <div class="autominmax gap-10 lg:flex lg:justify-center">
         <a href="#some_section"
           ><button
@@ -68,12 +68,13 @@
           </button></a
         >
 
-        <button
-          class="border-sm h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
-        >
-          Design
-        </button>
-
+        <a href="#design_section"
+          ><button
+            class="border-sm h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
+          >
+            Design
+          </button>
+        </a>
         <button
           class="border-sm h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
         >
@@ -87,6 +88,7 @@
         </button>
       </div>
     </section>
+    <!--DESIGN-->
     <section id="some_section">
       <div class="flex justify-center p-10 pt-40">
         <img class="w-16" src="illustrationer/some.svg" alt="SoMe" />
@@ -179,6 +181,35 @@
         <img src="billeder/repas.webp" alt="Billeder fra Ma Poule SoMe" />
         <img src="billeder/morbier.webp" alt="Billeder fra Ma Poule SoMe" />
         <img src="billeder/foie_gras.webp" alt="Billeder fra Ma Poule SoMe" />
+      </div>
+    </section>
+    <!--DESIGN-->
+    <section id="design_section">
+      <div class="flex justify-center p-10 pt-40">
+        <img class="w-16" src="illustrationer/design.svg" alt="Design" />
+      </div>
+      <div class="flex justify-center pt-10">
+        <h1>Design</h1>
+      </div>
+    </section>
+    <section>
+      <div
+        class="autominmax md:flex md:justify-center md:p-3 lg:flex lg:justify-center lg:p-10"
+      >
+        <div class="flex justify-evenly">
+          <img
+            class="p-10 md:w-2/3 lg:w-1/2"
+            src="billeder/figma.svg"
+            alt="Figma prototype"
+          />
+        </div>
+        <div class="flex justify-evenly">
+          <img
+            class="p-10 md:w-2/3 lg:w-1/2"
+            src="billeder/xd.svg"
+            alt="Adobe XD prototype"
+          />
+        </div>
       </div>
     </section>
     <script type="module" src="./main.js"></script>
