@@ -16,6 +16,7 @@ export default defineConfig({
         main: resolve(__dirname, "src/index.html"),
         erfaring: resolve(__dirname, "src/erfaring.html"),
         mig: resolve(__dirname, "src/mig.html"),
+        cv: resolve(__dirname, "src/cv.html"),
         // about: resolve(__dirname, "src/about.html"),
       },
     },
