@@ -6,25 +6,25 @@
 @media only screen and (max-width: 600px) {
   h1 {
     font-family: "Philosopher", sans-serif;
-    font-size: 2rem;
+    font-size: 2rem !important;
     color: #d92929;
   }
 
   h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
     color: black;
   }
 
   p {
     font-family: "Poppins", sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
     color: black;
     line-height: 32px;
   }
   a {
     font-family: "Poppins", sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
 }
 
@@ -32,19 +32,19 @@
 @media only screen and (min-width: 600px) {
   h1 {
     font-family: "Philosopher", sans-serif;
-    font-size: 5rem;
+    font-size: 5rem !important;
     color: #d92929;
   }
 
   h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
     color: black;
   }
 
   p {
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-size: 1rem !important;
     color: black;
     line-height: 32px;
   }
