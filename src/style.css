@@ -60,6 +60,13 @@
   background-repeat: no-repeat;
 }
 
+#baggrundsbobblen {
+  background-image: url(/illustrationer/baggrundsbobbel.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .autominmax {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
