@@ -25,6 +25,7 @@
           extend: {
             cursor: {
               mincursor: "url(cursor.svg) 25 25, pointer",
+              fokuscursor: "url(fyldt_pil.svg) 25 25, pointer",
             },
           },
         },
@@ -73,7 +74,7 @@
       >
         <a href="#some_section"
           ><button
-            class="border-sm h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
+            class="cursor-fokuscursor border-sm h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
           >
             SoMe
           </button></a
@@ -81,21 +82,21 @@
 
         <a href="#design_section"
           ><button
-            class="border-sm h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
+            class="cursor-fokuscursor border-sm h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
           >
             Design
           </button>
         </a>
         <a href="#kode_section"
           ><button
-            class="border-sm h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
+            class="cursor-fokuscursor border-sm h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
           >
             Kodning
           </button></a
         >
         <a href="#foto_section">
           <button
-            class="border-sm h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
+            class="cursor-fokuscursor border-sm h-10 w-28 border-2 border-black hover:border-none hover:bg-[#A80000] hover:text-white"
           >
             Fotografi
           </button>
@@ -215,7 +216,7 @@
       </div>
       <div class="flex justify-center pt-10 pb-10">
         <a
-          class="border-2 border-black p-2"
+          class="cursor-fokuscursor border-2 border-black p-2"
           href="http://bellakezia.dk/kea3/tema13/vildskud-festival/index.html"
           >Klik her for at se hjemmesiden</a
         >
@@ -271,7 +272,7 @@
     </section>
     <div class="flex justify-center pt-10 pb-10">
       <a
-        class="border-2 border-black p-2"
+        class="cursor-fokuscursor border-2 border-black p-2"
         href="http://lilleninse.dk/kea2/eksamen/cwc/"
         >Klik her for at se hjemmesiden</a
       >
@@ -399,7 +400,11 @@
     </section>
     <section>
       <div class="flex justify-center pt-10">
-        <a href="https://www.instagram.com/ninselille/"><h1>instagram</h1></a>
+        <a
+          class="cursor-fokuscursor"
+          href="https://www.instagram.com/ninselille/"
+          ><h1>instagram</h1></a
+        >
       </div>
     </section>
     <footer class="pt-60 pb-5">
@@ -450,5 +455,31 @@
       class="progress-bar fixed left-0 top-0 right-0 h-2 w-full origin-top-left bg-[#A80000]"
     ></div>
     <script type="module" src="./main.js"></script>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>
